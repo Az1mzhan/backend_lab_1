@@ -1,0 +1,34 @@
+{
+  "messages": [
+    {
+      "message": "Hello, how are you?"
+    },
+    {
+      "message": "I'm doing well, thanks!"
+    },
+    {
+      "message": "That's great to hear!"
+    },
+    {
+      "message": "It's been busy, but good."
+    },
+    {
+      "message": "Any exciting plans for the weekend?"
+    },
+    {
+      "message": "Not yet. Maybe just relaxing."
+    },
+    {
+      "message": "Sounds nice. I might go for a hike."
+    },
+    {
+      "message": "Hiking sounds refreshing!"
+    },
+    {
+      "message": "Indeed! Nature is always a good escape."
+    },
+    {
+      "message": "I totally agree."
+    }
+  ]
+}

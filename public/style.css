@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --google-grey: rgb(35, 35, 35);
+  --acid-purple: #6f2da8;
+}
+
+::selection {
+  background-color: var(--acid-purple);
+  color: white;
+}
+
+body {
+  background-color: var(--google-grey);
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  min-height: 85vh;
+  height: auto;
+}
+
+footer {
+  height: 15vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+input,
+button {
+  background-color: transparent;
+  color: var(--acid-purple);
+  border: none;
+}
+
+input {
+  border-bottom: 0.125vh solid var(--acid-purple);
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 2.5vw;
+  height: 2.5vw;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+button:hover {
+  background-color: var(--acid-purple);
+  color: var(--google-grey);
+}
+
+.container-fluid {
+  min-height: 100vh;
+  height: auto;
+}
+
+.message {
+  position: relative;
+  width: fit-content;
+  margin-top: 2.5vh;
+  padding: 0.5vh 1.25vw 0.5vh 0.5vw;
+  border: none;
+  border-radius: 0.25vw;
+  white-space: pre-line;
+}
+
+.bot-message {
+  background-color: white;
+  color: black;
+  animation: botMessageSlide 0.25s ease-out;
+}
+
+.my-message {
+  background-color: var(--acid-purple);
+  color: white;
+  animation: myMessageSlide 0.25s ease-out;
+}
+
+.my-message::selection {
+  background-color: white;
+  color: var(--acid-purple);
+}
+
+#message-form {
+  gap: 0.5vw;
+}
+
+@keyframes botMessageSlide {
+  from {
+    visibility: hidden;
+    left: -5vw;
+  }
+  to {
+    visibility: visible;
+    left: 0;
+  }
+}
+
+@keyframes myMessageSlide {
+  from {
+    visibility: hidden;
+    right: -5vw;
+  }
+  to {
+    visibility: visible;
+    right: 0;
+  }
+}
